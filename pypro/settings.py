@@ -140,7 +140,7 @@ if AWS_ACCESS_KEY_ID:  # checks if AWS_ACCESS_KEY_ID exists
     AWS_PRELOAD_METADATA = True
     AWS_AUTO_CREATE_BUCKET = False
     AWS_QUERYSTRING_AUTH = False
-    #AWS_S3_CUSTOM_DOMAIN = None
+    # AWS_S3_CUSTOM_DOMAIN = None
 
     COLLECTFAST_ENABLED = True
     AWS_DEFAULT_ACL = None
@@ -160,7 +160,6 @@ if AWS_ACCESS_KEY_ID:  # checks if AWS_ACCESS_KEY_ID exists
 
     INSTALLED_APPS.append('s3_folder_storage')
     INSTALLED_APPS.append('storages')
-
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
