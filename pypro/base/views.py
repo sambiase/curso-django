@@ -6,4 +6,4 @@ from django.http import HttpResponse
 
 
 def home(request):
-    return HttpResponse('Hi Django')
+    return HttpResponse('127.0.0.1 sweet 127.0.0.1')
