@@ -17,6 +17,7 @@ collectfast = "*"
 flake8 = "*"
 pytest-cov = "*"
 codecov = "*"
+sync = "*"
 
 [requires]
 python_version = "3.9"
