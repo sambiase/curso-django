@@ -132,6 +132,7 @@ COLLECTFAST_STRATEGY = "collectfast.strategies.boto3.Boto3Strategy"
 
 AWS_ACCESS_KEY_ID = config('AWS_ACCESS_KEY_ID')
 
+
 # STORAGE CONFIG FOR S3
 # verifica se a variavel AWS_ACCESS_KEY_ID nao esta vazia
 
