@@ -120,12 +120,10 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 # Configuracao de ambiente de Desenvolvimento
-
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 # Configuracao de Upload de Arquivos no Django
-
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'mediafiles')
 
@@ -134,8 +132,7 @@ COLLECTFAST_STRATEGY = "collectfast.strategies.boto3.Boto3Strategy"
 
 AWS_ACCESS_KEY_ID = config('AWS_ACCESS_KEY_ID')
 
-
-# STORAGE CONFIG FOR S3
+# STORAGE CONFIG IN S3 AWS
 # verifica se a variavel AWS_ACCESS_KEY_ID nao esta vazia
 
 if AWS_ACCESS_KEY_ID:
