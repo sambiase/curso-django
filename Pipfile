@@ -15,6 +15,7 @@ collectfast = "*"
 pytest = "*"
 django-debug-toolbar = "*"
 sentry-sdk = "*"
+flake8 = "*"
 
 [dev-packages]
 flake8 = "*"
