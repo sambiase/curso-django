@@ -10,3 +10,6 @@ DATABASE_URL=postgres://postgres:postgres@localhost/testdb
 
 # -- DJANGO DEBUG TOOLBAR --
 INTERNAL_IPS=127.0.0.1
+
+# -- SENTRY CONFIG --
+SENTRY_DSN=
