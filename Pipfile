@@ -16,6 +16,8 @@ pytest = "*"
 django-debug-toolbar = "*"
 sentry-sdk = "*"
 flake8 = "*"
+codecov = "*"
+pytest-cov = "*"
 
 [dev-packages]
 flake8 = "*"
