@@ -7,6 +7,7 @@ def test_status_code(client: Client):
     resp = client.get('/')
     assert resp.status_code == 200  # certificar que deu tudo certo
 
-def test_home_title (client: Client):
+
+def test_home_title(client: Client):
     resp = client.get('/')
-    assert_contains (resp, '<title>Curso Django!</title>')
+    assert_contains(resp, '<title>Curso Django!</title>')
