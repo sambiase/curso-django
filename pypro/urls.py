@@ -17,12 +17,11 @@ from django.conf import settings
 from django.contrib import admin
 from django.urls import path, include
 # import debug_toolbar
-from pypro.base.views import home
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', home),  # '' raiz do projeto, home = funcao home criada no passo anterior
-
+    path('', include('pypro.base.urls')),  # '' raiz do projeto, home = funcao home criada no passo anterior
 ]
+
 if settings.DEBUG:
     urlpatterns.append(path('__debug__/', include('debug_toolbar.urls')))
