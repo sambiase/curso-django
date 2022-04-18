@@ -21,20 +21,20 @@
 
   </head>
   <body>
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="{% url 'base:home' %}">Curso Django</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="{% url 'base:home' %}">Curso Django</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              </ul>
           </ul>
-      </ul>
 
-    </div>
-  </div>
-</nav>
+        </div>
+      </div>
+    </nav>
 
     <div class="container">
 	<div class="row">
@@ -44,6 +44,25 @@
 				<br><h2>
 					Django Course
 				</h2>
+             <h4 class="mt-1">Subscribe</h4>
+               <form action="https://gmail.us14.list-manage.com/subscribe/post?u=cca61e8daffe1cb9746216f35&amp;id=d0c7644263" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="form-row align-items-center" target="_blank" novalidate>
+      <div class="col-auto">
+            <label class="visually-hidden" for="mce-EMAIL">Email</label>
+            <input type="email" value="" name="EMAIL" class="form-control required" id="mce-EMAIL" placeholder="example@email.com">
+      </div>
+        <div class="col-auto">
+            <label class="visually-hidden" for="mce-FNAME">First Name</label>
+            <input type="text" value="" name="FNAME" class="form-control" id="mce-FNAME" placeholder="First Name">
+      </div>
+        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_cca61e8daffe1cb9746216f35_d0c7644263" tabindex="-1" value=""></div>
+
+
+      <div class="col-auto">
+        <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-primary">
+      </div>
+    </form>
+
+
 				<br><p>
 					More info soon :) <p>
                 <a href="https://www.linkedin.com/in/sambiase/" target="_blank">LinkedIn</a>
@@ -69,31 +88,31 @@
 	</div>
 </div>
 
-<footer class="main-footer mt-5 pt-4 pb-4">
-    <div class="container" >
-        <div class="row">
-            <div class="col">
-                <br>
-                <h3>Contact Details</h3>
-                <address>
-                    +55 14 123456789
-                    <br>
-                    <a href="mailto:marsamb@gmail.com">marsamb@gmail.com</a>
-                </address>
-            </div>
-        </div>
-
-    </div>
-    <div class="rights pb-4">
-         <div class="container" >
+    <footer class="main-footer mt-4 pt-2 pb-3 text-light">
+        <div class="container" >
             <div class="row">
                 <div class="col">
-                    {% now 'Y' %} - All Rights Reserved
+                    <br>
+                    <h3>Contact Details</h3>
+                    <address>
+                        +55 14 123456789
+                        <br>
+                        <a href="mailto:marsamb@gmail.com" class="text-light">marsamb@gmail.com</a>
+                    </address>
                 </div>
             </div>
-    </div>
-    </div>
 
-</footer>
+        </div>
+        <div class="rights pb-4">
+             <div class="container" >
+                <div class="row">
+                    <div class="col">
+                        {% now 'Y' %} - All Rights Reserved
+                    </div>
+                </div>
+        </div>
+        </div>
+
+    </footer>
   </body>
 </html>
