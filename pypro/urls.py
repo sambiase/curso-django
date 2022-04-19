@@ -21,6 +21,7 @@ from django.urls import path, include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('pypro.base.urls')),  # '' raiz do projeto, home = funcao home criada no passo anterior
+    path('stuff/', include('pypro.stuff.urls')),  # url da app de videos
 ]
 
 if settings.DEBUG:
