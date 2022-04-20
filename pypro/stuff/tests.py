@@ -15,7 +15,7 @@ def test_status_code(resp):
 
 
 def test_video_title(resp):
-    assert_contains(resp, '<h1>Binance BEP20</h1>')
+    assert_contains(resp, '<title>Curso Django!</title>')
 
 
 def test_video_contents(resp):
