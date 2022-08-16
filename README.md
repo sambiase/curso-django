@@ -5,7 +5,6 @@ working_branch
 
 Run Locally: `python manage.py runserver`
 
-main
 
 [![Build Status](https://app.travis-ci.com/sambiase/curso-django.svg?branch=main)](https://app.travis-ci.com/sambiase/curso-django)
 
