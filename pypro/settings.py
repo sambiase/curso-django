@@ -34,7 +34,7 @@ SECRET_KEY = config('SECRET_KEY')
 # cast to bool since DEBUG is a string
 DEBUG = config('DEBUG', cast=bool)
 
-#used by Pythyon Decouple. Needs to cast to CSV since it is a list
+# used by Pythyon Decouple. Needs to cast to CSV since it is a list
 ALLOWED_HOSTS = config('ALLOWED_HOSTS', cast=Csv())
 
 AUTH_USER_MODEL = 'base.User'
@@ -97,7 +97,7 @@ if DEBUG:
 default_db_url = 'sqlite:///' + os.path.join(BASE_DIR, 'db.sqlite3')
 parse_database = partial(dj_database_url.parse, conn_max_age=600)
 
-#USING Python Decould with dj-database-url
+# USING Python Decouple with dj-database-url
 DATABASES = {
     'default': config('DATABASE_URL', default=default_db_url, cast=parse_database)
 }
