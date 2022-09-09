@@ -83,8 +83,8 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'pypro.wsgi.application'
 
-# Config do Django Debug Toolbar
 
+# Config do Django Debug Toolbar
 INTERNAL_IPS = config('INTERNAL_IPS', cast=Csv(), default='127.0.0.1')
 
 if DEBUG:
@@ -186,7 +186,8 @@ if AWS_ACCESS_KEY_ID:
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-SENTRY_DSN = config('SENTRY_DNS', default=None)
+# using Python Decouple. SENTRY_DSN configured within .env
+SENTRY_DSN = config('SENTRY_DSN', default=None)
 
 if SENTRY_DSN:
     sentry_sdk.init(dsn=SENTRY_DSN, integrations=[DjangoIntegration()],
