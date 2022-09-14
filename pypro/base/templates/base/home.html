@@ -6,60 +6,78 @@
 
 {% block body%}
 <div class="container">
-	<div class="row">
-		<div class="col-md-12">
+    <div class="row">
+        <div class="col-md-12">
 
-			<div class="jumbotron">
-				<br><h2>
-					Django Course
-				</h2>
+            <div class="jumbotron">
+                <br>
+                <h2>
+                    Django Course
+                </h2>
+                <h5 class="mt-4">Subscribe</h5>
+                <form action="https://gmail.us14.list-manage.com/subscribe/post?u=cca61e8daffe1cb9746216f35&amp;id=d0c7644263&amp;f_id=00aa85e0f0"
+                      method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
+                      class="form-row align-items-center" target="_blank" novalidate>
+                    <div class="col-sm-3">
+                        <label class="visually-hidden" for="mce-EMAIL">Email</label>
+                        <input type="email" value="" name="EMAIL" class="form-control required" id="mce-EMAIL" required
+                               placeholder="example@email.com">
+                    </div>
+                    <div class="col-sm-3">
+                        <label class="visually-hidden" for="mce-FNAME">Email</label>
+                        <input type="text" value="" name="FNAME" class="form-control" id="mce-FNAME" placeholder="First Name">
+                    </div>
+
+                    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
+                                                                                              name="b_cca61e8daffe1cb9746216f35_d0c7644263"
+                                                                                              tabindex="-1"
+                                                                                              value=""></div>
+                    <div class="col-auto">
+                        <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe"
+                               class="btn btn-primary">
+                    </div>
+                </form>
                 <br>
                 <h4 class="mt-1">Subscribe now :)</h4>
+
+
                 <!-- INICIO DO BOTAO PAGSEGURO -->
                 <a href="https://pag.ae/7YbQb2KxP/button" target="_blank" title="Pagar com PagSeguro">
-                    <img src="//assets.pagseguro.com.br/ps-integration-assets/botoes/pagamentos/205x30-pagar.gif" alt="Pague com PagSeguro - é rápido, grátis e seguro!" /></a>
+                    <img src="//assets.pagseguro.com.br/ps-integration-assets/botoes/pagamentos/205x30-pagar.gif"
+                         alt="Pague com PagSeguro - é rápido, grátis e seguro!"/></a>
                 <!-- FIM DO BOTAO PAGSEGURO -->
 
-<!--             <h4 class="mt-1">Subscribe</h4>-->
-<!--               <form action="https://gmail.us14.list-manage.com/subscribe/post?u=cca61e8daffe1cb9746216f35&amp;id=d0c7644263" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="form-row align-items-center" target="_blank" novalidate>-->
-<!--      <div class="col-auto">-->
-<!--            <label class="visually-hidden" for="mce-EMAIL">Email</label>-->
-<!--            <input type="email" value="" name="EMAIL" class="form-control required" id="mce-EMAIL" placeholder="example@email.com">-->
-<!--      </div>-->
-<!--        <div class="col-auto">-->
-<!--            <label class="visually-hidden" for="mce-FNAME">First Name</label>-->
-<!--            <input type="text" value="" name="FNAME" class="form-control" id="mce-FNAME" placeholder="First Name">-->
-<!--      </div>-->
-<!--        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_cca61e8daffe1cb9746216f35_d0c7644263" tabindex="-1" value=""></div>-->
+                <script type='text/javascript'
+                        src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+                <script type='text/javascript'>
+                    (function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[4]='PHONE';ftypes[4]='phone';}(jQuery));var $mcj = jQuery.noConflict(true);
+
+                </script>
 
 
-<!--      <div class="col-auto">-->
-<!--        <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-primary">-->
-<!--      </div>-->
-<!--    </form>-->
+                <br>
 
+                </p></p>
 
-        <br>
-           <a href="https://www.linkedin.com/in/sambiase/" target="_blank">LinkedIn</a>
-            </p></p>
-
-			</div>
-			<div class="row">
-				<div class="col-md-12">
-					<div class="card">
-						<h5 class="card-header">
-							More details about this course
-						</h5>
-						<div class="card-body">
-							<p class="card-text">
-								<img src="{% static 'img/flamengo_maraca.png' %}" alt="Flamengo at Maracana"
-                                     class="img-thumbnail" float-left mr-3/>Mosaico do Flamengo no Maraca
-							</p>
-						</div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card">
+                        <h5 class="card-header">
+                            SuperMengo Page
+                        </h5>
+                        <div class="card-body">
+                            <p class="card-text">
+                                <img src="{% static 'img/flamengo_maraca.png' %}" alt="Flamengo @ Maracana"
+                                     class="img-thumbnail" float-left mr-1/>Mosaico do Flamengo no Maraca
+                                <a href="https://www.linkedin.com/in/sambiase/" target="_blank">LinkedIn</a>
+                            </p>
+                        </div>
                     </div>
-				</div>
-			</div>
-		</div>
-	</div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 {% endblock body%}

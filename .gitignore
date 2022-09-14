@@ -60,17 +60,17 @@ coverage.xml
 *.mo
 *.pot
 
-# Django stuff:
+# Django videos:
 *.log
 local_settings.py
 db.sqlite3
 db.sqlite3-journal
 
-# Flask stuff:
+# Flask videos:
 instance/
 .webassets-cache
 
-# Scrapy stuff:
+# Scrapy videos:
 .scrapy
 
 # Sphinx documentation
@@ -99,7 +99,7 @@ ipython_config.py
 # PEP 582; used by e.g. github.com/David-OConnor/pyflow
 __pypackages__/
 
-# Celery stuff
+# Celery videos
 celerybeat-schedule
 celerybeat.pid
 
