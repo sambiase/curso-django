@@ -1,0 +1,21 @@
+<!--Usa o template base.html como template base (pai) -->
+{% extends 'base/base.html' %}
+{% load static %}
+
+{% block title %}Curso Django - Home{% endblock title%}
+
+{% block body%}
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h1 class="mt-4 mb-3">Binance_Bep20</h1>
+
+            <iframe src="https://www.youtube.com/embed/vO_BGXQFwo4"
+                    width="560" height="315"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+        </div>
+    </div>
+</div>
+{% endblock body%}
