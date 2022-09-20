@@ -1,0 +1,26 @@
+<!--Usa o template base.html como template base (pai) -->
+{% extends 'base/base.html' %}
+{% load static %}
+
+{% block title %}All Cool Videos{% endblock title%}
+{% block description%}Page with all free cool videos :){% endblock description%}
+
+{% block body%}
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h1 class="mt-4 mb-3">Video list</h1>
+            <ol>
+                {% for video in videos%}
+                <li><a href="{{video.get_absolute_url }}"> {{video.title | default:"Title is missing :("}}</a></li>
+                {%empty%}
+                <li>No videos found :(</li>
+                {%endfor%}
+
+            </ol>
+
+
+        </div>
+    </div>
+</div>
+{% endblock body%}

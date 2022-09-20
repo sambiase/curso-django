@@ -1,5 +1,7 @@
 {% load static %} <!--template tag Django-->
 
+<!--base.html is the template base for all other htmls like home.html-->
+
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
@@ -39,31 +41,7 @@
 
     {% block body%} {%endblock body%}
 
+    {% include 'base/footer.html' with email_contact='marsamb@gmail.com' only %}
 
-    <footer class="main-footer mt-4 pt-2 pb-3 text-light">
-        <div class="container" >
-            <div class="row">
-                <div class="col">
-                    <br>
-                    <h3>Contact Details</h3>
-                    <address>
-                        +55 14 123456789
-                        <br>
-                        <a href="mailto:marsamb@gmail.com" class="text-light">marsamb@gmail.com</a>
-                    </address>
-                </div>
-            </div>
-        </div>
-        <div class="rights pb-4">
-             <div class="container" >
-                <div class="row">
-                    <div class="col">
-                        {% now 'Y' %} - All Rights Reserved
-                    </div>
-                </div>
-        </div>
-        </div>
-
-    </footer>
   </body>
 </html>

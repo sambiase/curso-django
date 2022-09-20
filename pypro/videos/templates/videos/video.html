@@ -2,15 +2,16 @@
 {% extends 'base/base.html' %}
 {% load static %}
 
-{% block title %}Curso Django - Home{% endblock title%}
+{% block title %}Curso Django - Videos{% endblock title%}
+{% block description%}Free Cool Videos{% endblock description%}
 
 {% block body%}
 <div class="container">
     <div class="row">
         <div class="col-md-12">
-            <h1 class="mt-4 mb-3">Binance_Bep20</h1>
+            <h1 class="mt-4 mb-3">{{video.title | default:"Title is missing :("}}</h1>
 
-            <iframe src="https://www.youtube.com/embed/vO_BGXQFwo4"
+            <iframe src="https://www.youtube.com/embed/{{video.youtube_id}}"
                     width="560" height="315"
                     title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
